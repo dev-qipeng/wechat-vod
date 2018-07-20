@@ -1,0 +1,19 @@
+<template name="comment">
+  <view class='border-bot' wx:for="{{commentList}}" wx:key="">
+    <view class='comment-info'>
+      <view class='commentbox'>
+        <image src='{{item.headImg}}' class='commenticon'></image>
+        <view class='commenttit'>
+          <view>{{item.nickname}}</view>
+        </view>
+      </view>
+      <view class='commenttimer'>{{item.createTime}}</view>
+    </view>
+    <view class='commentcon'>
+      <view>{{item.content}}</view>
+      <view class='bottom-line'></view>
+    </view>  
+    
+  </view>
+
+</template>

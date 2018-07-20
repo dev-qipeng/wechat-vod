@@ -1,0 +1,7 @@
+<template name="input">
+  <view class='inputText'>
+    <text class='iconfont icon-bianji'></text>
+    <input type='text' placeholder='说些什么吧！' value='{{inputValue}}' bindinput='inputText' bindfocus='inputFocus' placeholder-style='color:#a9a9a9;'  focus='{{focus}}' />
+    <button disabled='{{disabled}}' catchtap='sendComment'>发送</button>
+  </view>
+</template>

@@ -1,0 +1,17 @@
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{item.id}}" class="item {{currentTab==item.id ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item.name}}</text>  
+</view>
+
+<!-- <block wx:for="{{navbar}}" wx:key="cate">
+  <view hidden='{{currentTab!==item.id}}'>
+    <import src="../../component/filmList/filmList.wxml"/>
+    <template is="filmList" data="{{films: films, hasMore: hasMore, showLoading: showLoading}}"/>
+    <import src="../../component/message/message.wxml"/>
+    <template is="message" data="{{message: message}}"/>
+  </view>
+</block> -->
+
+<import src="../../component/filmList/filmList.wxml"/>
+    <template is="filmList" data="{{films: films, hasMore: hasMore, showLoading: showLoading}}"/>
+    <import src="../../component/message/message.wxml"/>
+    <template is="message" data="{{message: message}}"/>

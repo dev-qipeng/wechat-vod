@@ -1,0 +1,43 @@
+.comment-info{
+  display: flex;
+  padding: 20rpx 2%;
+}
+.commentbox{
+  flex: 1;
+}
+.commentbox image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 1rpx solid #f2f2f2;
+  display:block;
+  float:left;
+  margin-right: 20rpx;
+}
+.commenttit{
+  padding-top: 15rpx;
+  font-size: 30rpx;
+  color: #000;
+}
+.commenttimer{
+  padding-top: 15rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.commentcon{
+  margin-top: 5rpx;
+  padding: 0rpx 2%;
+  padding-left: 130rpx;
+  display: -webkit-box ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+}
+.bottom-line {
+  height: 1rpx;
+  background-color:gainsboro;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}

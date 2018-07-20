@@ -1,0 +1,53 @@
+<view class="container">
+    <block wx:if="{{showLoading}}">
+        <view class="loading">玩命加载中…</view>
+    </block>
+    <block wx:elif="{{showContent}}">
+    <!-- fd: film detail -->
+        <view class="fd-hd">
+          <video class='pf-video' autoplay='true' src='{{filmDetail.url}}' poster='{{filmDetail.poster}}'></video>
+        </view>
+        <view class='fd-title-box'>
+          <view class='fd-title'>{{filmDetail.name}}</view>
+          <button class="fd-favorite" bindtap="addFavorite" wx:if="{{like == false}}"  data-id="{{filmDetail.id}}" data-like="like">收藏</button>
+          <button class="fd-favorite-active" bindtap="disFavorite" wx:if="{{like == true}}" data-serviceid="{{filmDetail.id}}" data-like="{{like}}">已收藏</button>
+        </view>
+        
+        <view class="fd-data">
+            <view class="fd-data-item">
+                <view class="fd-data-num">{{filmDetail.playNum}}</view>
+                <view class="fd-data-title">播放</view>
+            </view>
+            <view class="fd-data-item">
+                <view class="fd-data-num">{{filmDetail.likeNum}}</view>
+                <view class="fd-data-title">点赞</view>
+            </view>
+            <view class="fd-data-item">
+                <view class="fd-data-num">{{filmDetail.likeNum}}</view>
+                <view class="fd-data-title">评论</view>
+            </view>
+            <view class="fd-data-item">
+                <view class="fd-data-num">{{filmDetail.likeNum}}</view>
+                <view class="fd-data-title">评分人数</view>
+            </view>
+        </view>
+        <view class="fd-bd">
+            <view class="fd-bd-title">剧情简介</view>
+            <view class="fd-bd-intro">{{filmDetail.description}}</view>
+            
+        </view>
+        <view class="fd-bd">
+          <view class="fd-bd-title">评论列表</view>
+          <view class="fd-bd-intro">
+            <import src="../../component/comment/comment.wxml"/>
+            <template is="comment" data="{{commentList: commentList}}"/>
+          </view>
+        </view>
+        <view class="fd-bd">
+          <import src="../../component/input/input.wxml"/>
+          <template is="input" data="{{disabled: disabled, inputValue: inputValue}}"/>
+        </view>
+      </block> 
+</view>
+<import src="../../component/message/message.wxml"/>
+<template is="message" data="{{message: message}}"/>
