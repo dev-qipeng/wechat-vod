@@ -15,7 +15,7 @@
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText":  "视频点播",
+    "navigationBarTitleText": "视频点播",
     "backgroundColor": "#fff",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true
@@ -25,28 +25,31 @@
     "selectedColor": "#47a86c",
     "backgroundColor": "#ffffff",
     "borderStyle": "white",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "dist/images/index_icon.png",
-      "selectedIconPath": "dist/images/index_active_icon.png",
-      "text": "最热"
-    }, {
-      "pagePath": "pages/category/category",
-      "iconPath": "dist/images/category_icon.png",
-      "selectedIconPath": "dist/images/category_active_icon.png",
-      "text": "分类"
-    },
-
-    {
-      "pagePath": "pages/my/my",
-      "iconPath": "dist/images/my_icon.png",
-      "selectedIconPath": "dist/images/my_active_icon.png",
-      "text": "我的"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "dist/images/index_icon.png",
+        "selectedIconPath": "dist/images/index_active_icon.png",
+        "text": "最热"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "dist/images/category_icon.png",
+        "selectedIconPath": "dist/images/category_active_icon.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "dist/images/my_icon.png",
+        "selectedIconPath": "dist/images/my_active_icon.png",
+        "text": "我的"
+      }
+    ]
   },
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

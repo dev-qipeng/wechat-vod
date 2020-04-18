@@ -3,6 +3,7 @@ var config = require('../../comm/script/config')
 var app = getApp()
 Page({
 	data: {
+    baseUrl: config.baseUrl,
 		films: [],
 		hasMore: true,
 		showLoading: true,

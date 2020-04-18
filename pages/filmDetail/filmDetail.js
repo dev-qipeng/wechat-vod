@@ -3,6 +3,7 @@ var util = require('../../util/util')
 var config = require('../../comm/script/config')
 Page({
   data: {
+    baseUrl: config.baseUrl,
     videoId: '',
     filmDetail: {},
     showLoading: true,

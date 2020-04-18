@@ -2,6 +2,7 @@ var api = require('../../comm/script/fetch')
 var config = require('../../comm/script/config')
 Page({
   data: {
+    baseUrl: config.baseUrl,
     films: [],
     hasMore: false,
     showLoading: false,

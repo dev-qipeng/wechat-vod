@@ -4,5 +4,5 @@
     <template is="nullTip" data="{{nullTip: nullTip}}"/>
 </block>
 <block wx:else>
-    <template is="filmList" data="{{films: films, hasMore: hasMore, showLoading: showLoading}}"/>
+    <template is="filmList" data="{{baseUrl: baseUrl, films: films, hasMore: hasMore, showLoading: showLoading}}"/>
 </block>

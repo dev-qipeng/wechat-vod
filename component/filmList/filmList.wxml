@@ -7,7 +7,7 @@
         <block wx:for="{{films}}" wx:for-index="filmIndex" wx:for-item="filmItem" wx:key="film">
             <view data-id="{{filmItem.id}}" class="film-item" catchtap="viewFilmDetail">
                 <view class="film-cover">
-                    <image src="{{filmItem.poster}}" class="film-cover-img"></image>
+                    <image src="{{baseUrl}}{{filmItem.poster}}" class="film-cover-img"></image>
                     <view class="film-rating">
                         <block wx:if="{{filmItem.score == 0 || filmItem.score == null}}">
                             暂无评分

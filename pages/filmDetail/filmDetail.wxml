@@ -5,7 +5,7 @@
     <block wx:elif="{{showContent}}">
     <!-- fd: film detail -->
         <view class="fd-hd">
-          <video class='pf-video' autoplay='true' src='{{filmDetail.url}}' poster='{{filmDetail.poster}}'></video>
+          <video class='pf-video' autoplay='true' src='{{baseUrl}}{{filmDetail.url}}' poster='{{baseUrl}}{{filmDetail.poster}}'></video>
         </view>
         <view class='fd-title-box'>
           <view class='fd-title'>{{filmDetail.name}}</view>

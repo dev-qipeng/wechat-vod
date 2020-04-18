@@ -15,8 +15,10 @@ api地址：api.douban.com
 https://www.qipeng.site/api/
 http://127.0.0.1:8081/api/
 */
-var url = 'https://www.qipeng.site/api/'
+// var url = 'https://www.qipeng.site/api/'
+var url = 'http://127.0.0.1:8081/api/'
 module.exports = {
+  baseUrl: url,
   token: wx.getStorageSync('token'),
   city: '',
   count: 4,
